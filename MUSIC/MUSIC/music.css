@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: sans-serif;
+  background-color: #002E63;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+.logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 10px;
+}
+
+.nav {
+  width: 80%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.menu {
+  width: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.sr {
+  border: 2px solid #555d50;
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  height: 30px;
+  align-items: center;
+}
+
+.sr input {
+  font-weight: 500;
+  font-size: larger;
+  border: none;
+  outline: none;
+  width: 255px;
+  background-color: #002E63;
+}
+
+.sr i {
+  width: 5%;
+}
+
+.fav {
+  height: auto;
+  width: 80px;
+}
+
+.bell {
+  display: flex;
+}
+
+.dot {
+  background-color: red;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  position: relative;
+  left: 13px;
+}
+
+/* //responsiveness here */
+@media (max-width: 700px) {
+  .nav {
+    display: none;
+    width: 100%;
+   
+  }
+  .fav{
+    background-color: black;
+  }
+  .sr input
+  {
+    background-color: black;
+  }
+  .bell
+  {
+    background-color: black;
+    /* background: transparent; */
+
+
+  }
+}
+
+@media (min-width: 700px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 400px)
+ {
+    .nav
+    {
+        width: 100%;
+    }
+
+
+
+ }
+
+#navb:target {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: fixed;
+  top: 100px;
+  flex-wrap: wrap;
+  height: 120px;
+  /* z-index: 0; */
+  background-color: black;
+  
+ 
+  /* position: relative;
+    left: -100px;
+   */
+}
+
+.mainb {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 120px;
+
+  /* top: 10px; */
+}
+
+.add {
+  width: 70%;
+  height: inherit;
+  height: 60px;
+}
+
+.queue {
+  width: 30%;
+  height: 500px;
+  border: 2px solid #555d50;
+
+  overflow-y: scroll;
+
+  /* padding-right: -2px; */
+}
+
+.uph {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  /* position: fixed; */
+  position: sticky;
+  top: 0px;
+}
+
+.hover {
+  display: none;
+}
+
+.onhover p:hover.hover {
+  display: flex;
+}
+
+.add {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* overflow: scroll; */
+}
+
+.num {
+  height: 70px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+ 
+}
+
+.heart {
+  width: 10%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* top: 25px; */
+}
+
+.img img {
+  width: 50px;
+ 
+}
+
+.heart i {
+  color: red;
+}
+
+.sub {
+  width: 70%;
+  height: auto;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #555d50;
+}
+
+.bag {
+ 
+  width: 95%;
+  height: 400px;
+  background-image: url("./namo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    background-image: url("./baram.jpg");
+    
+  }
+
+  10% {
+    background-image: url("./vikram-vedha-banner-1664441344.jpeg");
+  }
+
+  20% {
+    background-image: url("./rrr.jpg");
+  }
+
+  30% {
+    background-image: url("./kartikey.jpg");
+  }
+
+  50% {
+    background-image: url("./liger.webp");
+  }
+
+  60% {
+    background-image: url("./kgf.png");
+  }
+
+  70% {
+    background-image: url("./pushpa.jpg");
+  }
+
+  80% {
+    background-image: url("./ps1.jpg");
+  }
+
+  90% {
+    background-image: url("./wasey.webp");
+  }
+
+  100% {
+    background-image: url("./sac.jpg");
+  }
+}
+
+.songsset img {
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+
+.set {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: scroll;
+  height: 250px;
+  position: relative;
+  top: 125px;
+}
+
+.sh {
+  width: 100%;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.setname {
+  padding-left: 70px;
+}
+
+@media (max-width: 1100px) {
+  .mainb {
+    flex-wrap: wrap;
+  }
+
+  .sub {
+    width: 100%;
+  }
+
+  .queue {
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+  }
+}
+
+.hhits {
+  width: 100%;
+  height: 250px;
+
+  overflow-x: scroll;
+  position: relative;
+  top: 120px;
+}
+
+.hadd {
+  width: 100%;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+}
+
+.hadd img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+
+.hflex {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+}
+
+.hname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.haryana {
+  position: relative;
+  top: 120px;
+}
+
+.rp {
+  position: relative;
+  top: 120px;
+}
+
+.punjabi {
+  position: relative;
+  top: 120px;
+}
+ 
+
+.foot
+{
+  width: 100%;
+  height: 100px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid #555d50;
+  
+ 
+}
+.hhitsscrollbar
+{
+    overflow: hidden;
+    height: 350px;
+    background-color: aqua;
+}
+.footf
+{
+  width: 50%;
+  
+  height: 100px;
+  position: relative;
+  top: 40px;
+  flex-wrap: wrap;
+}
+.foots
+{
+  width: 50%;
+  /* background-color: red; */
+  height: 100px;
+  position: relative;
+  top: 40px;
+  position: relative;
+  flex-wrap: wrap;
+ 
+}
+
+.footfa img
+{
+  height: 40px;
+  width: 40;
+ 
+}
+.footfa
+{
+  width: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+  margin: 10px;
+
+}
+.footsa
+{
+  width: 100%;
+  display: flex;
+
+  justify-content: space-around;
+ 
+  /* margin-left: 30px; */
+}
+.volu
+{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+}
+@media(max-width:700px)
+
+{
+  .footf,.foots
+  {
+    flex-wrap: wrap;
+  }
+}
+
+
